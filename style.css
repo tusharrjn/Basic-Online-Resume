@@ -1,0 +1,232 @@
+:root {
+    --main-color: #3498db; /* Blue */
+    --second-color: #555; /* Dark Gray */
+    --bg-color: #f8f9fa; /* Light Gray */
+    --text-color: #333; /* Black */
+    --second-bg-color: #f4f4f4; /* Lighter Gray */
+    --h2-font: 28px; /* Font size for h2 */
+    --p-font: 16px; /* Font size for paragraphs */
+}
+
+/* Reset some default styles */
+body, h1, h2, ul, p, li, a, input, textarea {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+/* Apply a background color to the body */
+body {
+    background-color: var(--bg-color);
+    font-family: 'Arial', sans-serif;
+    line-height: 1.6;
+}
+
+/* Create a container for the content */
+.container {
+    max-width: 800px;
+    margin: 0 auto;
+}
+
+/* Style the header */
+header {
+    background-color: var(--main-color);
+    color: #fff;
+    text-align: center;
+    padding: 20px;
+    border-radius: 8px;
+}
+
+/* Style section titles */
+h2 {
+    color: var(--text-color);
+}
+
+/* Style the left and right sections */
+.education,
+.skills,
+.projects,
+.work-experience,
+.contact {
+    margin: 20px;
+    padding: 20px;
+    background-color: #fff;
+    border-radius: 8px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+}
+
+/* Style list items in education section */
+.education li {
+    list-style-type: none;
+    margin-bottom: 8px;
+}
+
+/* Style list items in skills, projects, and work experience sections */
+.skills li,
+.projects li,
+.work-experience li {
+    list-style-type: none;
+    margin-bottom: 8px;
+}
+
+.contact {
+    background: var(--second-bg-color);
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    align-items: center;
+    gap: 2.4rem;
+}
+
+.contact-text h4 {
+    color: var(--text-color);
+    margin: 18px 0;
+    font-size: 20px;
+    font-weight: 600;
+}
+
+.contact-text h2 {
+    font-size: var(--h2-font);
+    line-height: 1;
+}
+
+.contact-text p {
+    color: var(--second-color);
+    font-size: var(--p-font);
+    line-height: 1.8;
+    margin-bottom: 30px;
+}
+
+.list {
+    margin-bottom: 2.5rem;
+}
+
+.list li {
+    margin-bottom: 12px;
+}
+
+.list li a {
+    display: block;
+    color: var(--second-color);
+    font-size: 14px;
+    transition: all .45s ease;
+}
+
+.list li a:hover {
+    color: var(--text-color);
+    transform: translateX(5px);
+}
+
+.contact-icons i {
+    height: 45px;
+    width: 45px;
+    background: var(--main-color);
+    color: var(--text-color);
+    font-size: 20px;
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+    border-radius: 8px;
+    margin-right: 15px;
+    transition: all .45s ease;
+}
+
+.contact-icons i:hover {
+    background: var(--text-color);
+    color: var(--main-color);
+}
+
+.contact-form form {
+    position: relative;
+}
+
+.contact-form form input,
+form textarea {
+    width: 100%;
+    padding: 14px;
+    background: var(--bg-color);
+    color: var(--text-color);
+    border: none;
+    outline: none;
+    font-size: 15px;
+    border-radius: 8px;
+    margin-bottom: 10px;
+}
+
+.contact-form textarea {
+    resize: none;
+    height: 240px;
+}
+
+.contact-form .submit {
+    display: inline-block;
+    font-size: 16px;
+    background: var(--main-color);
+    color: var(--text-color);
+    width: 160px;
+    transition: all .45s ease;
+}
+
+.contact-form .submit:hover {
+    transform: scale(1.1);
+    cursor: pointer;
+}
+
+.end {
+    padding: 20px 15%;
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+    justify-content: space-between;
+    gap: 2rem;
+    background: var(--bg-color);
+}
+
+.last-text p {
+    color: var(--second-color);
+    font-size: 14px;
+}
+
+.top i {
+    padding: 10px;
+    border-radius: 8px;
+    font-size: 15px;
+    color: var(--text-color);
+    background: var(--main-color);
+}
+
+/* Style the footer */
+footer {
+    text-align: center;
+    padding: 10px;
+    background-color: #343a40;
+    color: #fff;
+    border-radius: 0 0 8px 8px;
+}
+
+/* Style links */
+
+.contact-icons i {
+    height: 45px;
+    width: 45px;
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+    border-radius: 8px;
+    margin-right: 15px;
+    transition: all .45s ease;
+}
+
+.contact-icons i.bxl-instagram {
+    background: #E1306C; /* Instagram color */
+    color: #fff;
+}
+
+.contact-icons i.bxl-linkedin {
+    background: #0077B5; /* LinkedIn color */
+    color: #fff;
+}
+
+.contact-icons i.bxl-github {
+    background: #333; /* GitHub color */
+    color: #fff;
+}
